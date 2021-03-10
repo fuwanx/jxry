@@ -31,8 +31,8 @@ jobs:
       - name: '运行 【小乐】'
         if: env.XL_URL
         run: |
-          cd ~/bbb
-          node Task/xiaole.js
+          cd ~/haoyangmao
+          node haoyangmao/xiaole.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
