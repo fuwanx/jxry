@@ -17,10 +17,10 @@ jobs:
           python-version: 3.7
          
       - name: 'Install requirements'
-        run: pip install -r ./jxry/C.TXT
+        run: pip install -r .github/workflows/C.TXT
         
       - name: '-' 
-        run: python3 ./jxry/Fenji.py
+        run: python3 .github/workflows/Fenji.py
         env:
             DJJ_TELE_COOKIE: ${{ secrets.DJJ_TELE_COOKIE }}
             XMLY_BARK_COOKIE: ${{ secrets.XMLY_BARK_COOKIE }}
