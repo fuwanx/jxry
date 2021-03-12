@@ -1,4 +1,4 @@
-﻿name: 小乐
+name: 小乐
 
 on:
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/aaa/bbb.git ~/bbb
+          git clone https://raw.githubusercontent.com/fuwanx/jxry/main/xiaole.js ~/xiaole
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -31,8 +31,8 @@ jobs:
       - name: '运行 【小乐】'
         if: env.XL_URL
         run: |
-          cd ~/bbb
-          node Task/xiaole.js
+          cd ~/xiaole
+          node jxry/xiaole.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
