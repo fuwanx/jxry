@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://raw.githubusercontent.com/fuwanx/haoyangmao/main/The.Flash/The.Flash/xiaole.js ~/xiaole
+         
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
