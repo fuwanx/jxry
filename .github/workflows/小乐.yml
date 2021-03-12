@@ -32,7 +32,7 @@ jobs:
         if: env.XL_URL
         run: |
           cd ~/xiaole
-          node /The.Flash/The.Flash/xiaole.js
+          node /xiaole.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
