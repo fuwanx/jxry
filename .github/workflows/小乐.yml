@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://raw.githubusercontent.com/fuwanx/jxry/main/xiaole.js ~/xiaole
+          git clone https://raw.githubusercontent.com/fuwanx/haoyangmao/main/The.Flash/The.Flash/xiaole.js ~/xiaole
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -32,7 +32,7 @@ jobs:
         if: env.XL_URL
         run: |
           cd ~/xiaole
-          node jxry/xiaole.js
+          node /The.Flash/The.Flash/xiaole.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
