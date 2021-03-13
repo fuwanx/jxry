@@ -15,7 +15,7 @@ jobs:
         XL_HEADER: ${{ secrets.XL_HEADER }}  
         
     steps:
-      - name: Checkout
+      - name: 
         run: |
          
       - name: Use Node.js 12.x
