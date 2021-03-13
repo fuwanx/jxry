@@ -23,13 +23,12 @@ jobs:
       - name: npm install
         if: env.XL_URL
         run: |
-          cd ~/jxry
-          git checkout ZIYE
+          
           npm install
       - name: '运行 【小乐】'
         if: env.XL_URL
         run: |
-          cd ~/jxry
+          
           node xiaole.js
         env:
           
