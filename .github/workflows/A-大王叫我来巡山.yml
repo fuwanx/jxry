@@ -1,4 +1,3 @@
-
 name: A-大王叫我来巡山.yml
 
 on:
@@ -20,10 +19,10 @@ jobs:
           python-version: 3.7
          
       - name: 'Install requirements'
-        run: pip install -r .github/workflows/C.TXT 
+        run: pip install -r C.TXT 
         
       - name: '大王叫我来巡山' 
-        run: python3 .github/workflows/DaWangLaiXunShan.py
+        run: python3 DaWangLaiXunShan.py
         env:
             DJJ_TELE_COOKIE: ${{ secrets.DJJ_TELE_COOKIE }}
             xmly_bark_cookie: ${{ secrets.xmly_bark_cookie }}
