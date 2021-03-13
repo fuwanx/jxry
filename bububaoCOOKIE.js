@@ -1,6 +1,6 @@
 //独立COOKIE文件     ck在``里面填写，多账号换行
 
-let bububaotokenVal = ``
+let bububaotokenVal = `3EBA305F57682FC9122D5D8C2525222G1614088637`
 
 
 
