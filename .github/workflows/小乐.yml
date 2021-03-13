@@ -14,10 +14,7 @@ jobs:
         XL_URL: ${{ secrets.XL_URL }}
         XL_HEADER: ${{ secrets.XL_HEADER }}  
         
-    steps:
-      - name: 
-        run: |
-         
+    steps:      
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
