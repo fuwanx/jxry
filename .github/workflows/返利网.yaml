@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-        flwurl: ${{ secrets.flwurl }}
-        flwheader: ${{ secrets.flwheader }}
-        flwspbody: ${{ secrets.flwspbody }}
-        flwqwbody: ${{ secrets.flwqwbody }}
-        flwydbody: ${{ secrets.flwydbody }}
+      flwurl: ${{ secrets.flwurl }}
+      flwheader: ${{ secrets.flwheader }}
+      flwspbody: ${{ secrets.flwspbody }}
+      flwqwbody: ${{ secrets.flwqwbody }}
+      flwydbody: ${{ secrets.flwydbody }}
 
     steps:
       - name: Checkout
