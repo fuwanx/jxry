@@ -1,4 +1,4 @@
-name: 返利网 
+name: 返利网
 
 on:
   workflow_dispatch:
@@ -21,11 +21,11 @@ jobs:
         with:
           node-version: 12.x
       - name: npm install
-        if: env.flwheader
+        if: env.flwurl
         run: |
           npm install
       - name: '运行 【返利网】'
-        if: env.flwheader
+        if: env.flwurl
         run: |
           node flw.js
         env:
