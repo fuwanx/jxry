@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-        flwurl: ${{ secrets.FLW_flwurl }}
-        flwheader: ${{ secrets.FLW_flwheader }}
+        flwurl: ${{ secrets.flwurl }}
+        flwheader: ${{ secrets.flwheader }}
         
     steps:
     
@@ -23,11 +23,11 @@ jobs:
         with:
           node-version: 12.x
       - name: npm install
-        if: env.FLW_flwurl
+        if: env.flwurl
         run: |
           npm install
       - name: '运行 【返利网】'
-        if: env.FLW_flwurl
+        if: env.flwurl
         run: |
           
           node flw.js
