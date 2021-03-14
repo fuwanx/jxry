@@ -15,16 +15,17 @@ jobs:
        
     steps:
     
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-      - name: npm install
-        run: |
-        npm install
-      - name: '运行 【返利网】'
-        run: |
-          node flw.js
+     - uses: actions/checkout@v1
+     - name: Use Node.js 10.x
+     uses: actions/setup-node@v1
+     with:
+       node-version: 10.x
+     - name: npm install
+      run: |
+       npm install
+     - name: "运行 【返利网】"
+     run: |
+         node flw.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
