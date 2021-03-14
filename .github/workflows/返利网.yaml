@@ -25,7 +25,7 @@ flwydbody: ${{ secrets.flwydbody }}
         with:
           node-version: 12.x
       - name: npm install
-        if: env.flwurl
+        #if: env.flwurl
         run: |
           npm install
       - name: '运行 【返利网】'
