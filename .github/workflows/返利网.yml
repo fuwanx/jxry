@@ -12,8 +12,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     env:
         flwurl: ${{ secrets.flwurl }}
-          flwheader
-flwheader: ${{ secrets.flwheader }}
+        flwheader: ${{ secrets.flwheader }}
         
     steps:
     
