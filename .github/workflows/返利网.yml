@@ -29,7 +29,7 @@ flwydbody: ${{ secrets.flwydbody }}
         run: |
           npm install
       - name: '运行 【返利网】'
-        if: env.flwurl
+       # if: env.flwurl
         run: |
           node flw.js
         env:
