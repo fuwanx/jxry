@@ -24,7 +24,7 @@ jobs:
       - name: '运行【芝麻视频】'
         
         run: |
-          node ./iosrule/zhima.js
+          node /iosrule/zhima.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY}}
           BARK_PUSH: ${{ secrets.BARK_PUSH}}
