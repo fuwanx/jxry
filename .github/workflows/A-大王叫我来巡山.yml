@@ -1,4 +1,4 @@
-name: A-大王叫我来巡山.yml
+name: A-大王叫我来巡山
 
 on:
   schedule:
