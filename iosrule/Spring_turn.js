@@ -84,18 +84,11 @@ let phoneModel=['iPhone XR','iPhone 7 Plus','iPhone 6s Plus','iPhone SE','iPad m
   
 if ($.isNode()) {
    cfzhdArr=[];
-if (process.env.CFZHD && process.env.CFZHD.indexOf('\n') > -1) {
+if (process.env.CFZHD && process.env.CFZHD.indexOf('\n') > -1) 
    acsecret = process.env.CFZHD.split('\n');
-   
-  }}
-
-
-
-
-
-
-
-
+   else
+acsecret = process.env.CFZHD.split();
+  }
 
 for (let i = 2; i <= cfzcount; i++) {
     cfzurlArr.push($.getdata(`cfzurl${i}`))
@@ -103,8 +96,14 @@ for (let i = 2; i <= cfzcount; i++) {
     cfzsbhdArr.push($.getdata(`cfzsbhd${i}`))
   }
 
+
+
+
+
+
+
 cfzhdArr=[];
-for (let i = 0; i <= acsecret.length; i++) {
+for (let i = 0; i <acsecret.length; i++) {
 hd.Authorization=acsecret[i];
 hd.phoneModel=phoneModel[i];
 cfzhdArr.push(JSON.stringify(hd));
