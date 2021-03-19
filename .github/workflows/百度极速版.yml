@@ -1,11 +1,11 @@
-name: 染驴
+name: 百度极速版
 
 on:
     # push:
     #     branches:
     #         - main
     schedule:
-        - cron: " */15 * * * *"
+        - cron: " */30 * * * *"
     workflow_dispatch:
 jobs:
     build:
@@ -20,13 +20,12 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: "运行 【染驴】"
+            - name: "运行 【百度极速版】"
               run: |
-                  node RaNLV.js
+                  node baidujsb.js
               env:
-                  RLURL: ${{ secrets.RLURL }}
-                  RLHEADER: ${{ secrets.RLHEADER }}
-                  RLBODY: ${{ secrets.RLBODY }}
+                  BDSPEED: ${{ secrets.BDSPEED }}
+                  
                   SCKEY: ${{ secrets.SCKEY }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
                   PUSH_KEY: ${{ secrets.PUSH_KEY }}
