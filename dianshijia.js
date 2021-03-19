@@ -1,4 +1,4 @@
-/*https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js*/
+/*https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js
 /*
 更新时间: 2021-03-01 10:30
 赞赏:电视家邀请码`893988`,农妇山泉 -> 有点咸，万分感谢
