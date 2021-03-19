@@ -5,7 +5,7 @@ on:
     #     branches:
     #         - main
     schedule:
-        - cron: " 0 7,22 * * *"
+        - cron: " 0 23,14 * * *"
     workflow_dispatch:
 jobs:
     build:
@@ -24,7 +24,7 @@ jobs:
               run: |
                   node dianshijia.js
               env:
-                SY_SIGNHEADER_DSJ: ${{ secrets.SY_SIGNHEADER_DSJ }}
+                  SY_SIGNHEADER_DSJ: ${{ secrets.SY_SIGNHEADER_DSJ }}
                   DRAWAL_DSJ: ${{ secrets.DRAWAL_DSJ }}
                   SCKEY: ${{ secrets.SCKEY }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
