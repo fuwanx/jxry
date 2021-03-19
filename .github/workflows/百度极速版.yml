@@ -25,7 +25,7 @@ jobs:
                   node baidujsb.js
               env:
                   BDSPEED: ${{ secrets.BDSPEED }}
-                  
+                  CASH_BAIDU: ${{ secrets.CASH_BAIDU }}
                   SCKEY: ${{ secrets.SCKEY }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
                   PUSH_KEY: ${{ secrets.PUSH_KEY }}
