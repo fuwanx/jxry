@@ -24,6 +24,7 @@ jobs:
               run: |
                   node baidujsb.js
               env:
+                  BAIDU_COOKIE: ${{ secrets.BAIDU_COOKIE }}
                   BDSPEED: ${{ secrets.BDSPEED }}
                   CASH_BAIDU: ${{ secrets.CASH_BAIDU }}
                   SCKEY: ${{ secrets.SCKEY }}
