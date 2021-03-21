@@ -34,7 +34,7 @@ jobs:
           npm install
       - name: '运行 【笑谱】'
         run: |
-                  node iboxpay.js
+                  node xp.js
               env:
                 REFRESHTOKEN: ${{ secrets.REFRESHTOKEN }}
                 IBOXPAYVIDEOHEADER: ${{ secrets.IBOXPAYVIDEOHEADER }}
