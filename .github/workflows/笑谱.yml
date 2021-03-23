@@ -36,7 +36,7 @@ jobs:
         run: |
                   node iboxpay.js
               env:
-                SYNCRUL: /The.Flash/The.Flash/xp.js
+                SYNCRUL: /The.Flash/The.Flash/iboxpay.js
                 REFRESHTOKEN: ${{ secrets.REFRESHTOKEN }}
                 IBOXPAYVIDEOHEADER: ${{ secrets.IBOXPAYVIDEOHEADER }}
                 IBOXPAYVIDEOBODY: ${{ secrets.IBOXPAYVIDEOBODY }}
