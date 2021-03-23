@@ -6,7 +6,7 @@ on:
     #         - main
     schedule:
         - cron: " 19 */30 * * *"
-    #workflow_dispatch:
+    workflow_dispatch:
         watch:
         types: started
         repository_dispatch:
