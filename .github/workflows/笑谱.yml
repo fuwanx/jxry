@@ -34,9 +34,9 @@ jobs:
           npm install
       - name: '运行 【笑谱】'
         run: |
-                  node xiaopu.js
+                  node xp.js
               env:
-                SYNCRUL: iboxpay.js
+                SYNCRUL: /The.Flash/The.Flash/xp.js
                 REFRESHTOKEN: ${{ secrets.REFRESHTOKEN }}
                 IBOXPAYVIDEOHEADER: ${{ secrets.IBOXPAYVIDEOHEADER }}
                 IBOXPAYVIDEOBODY: ${{ secrets.IBOXPAYVIDEOBODY }}
