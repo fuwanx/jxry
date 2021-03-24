@@ -10,7 +10,7 @@ on:
         watch:
         types: started
         repository_dispatch:
-        types: iboxpay
+        types: started
 jobs:
     build:
         runs-on: ubuntu-latest
