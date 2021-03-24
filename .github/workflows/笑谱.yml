@@ -9,8 +9,6 @@ on:
     workflow_dispatch:
         watch:
         types: started
-        repository_dispatch:
-        types: started
 jobs:
     build:
         runs-on: ubuntu-latest
