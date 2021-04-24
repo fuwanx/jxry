@@ -1,0 +1,5 @@
+ [MITM]
+ hostname = m.ximalaya.com
+
+ [rewrite_local]
+ https:\/\/m\.ximalaya\.com\/speed\/task-center\/account\/coin url script-request-header https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmly_speed_ccokie.js
